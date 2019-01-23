@@ -46,10 +46,15 @@
 						<ul class="navbar-nav ml-auto pr-2">
 
 								<!-- pages/list items -->
+								<!-- Button trigger modal -->
+
 
 								<!-- green button -->
                 <li class="nav-item mr-2 pr-2">
-                  <a href="https://open.spotify.com/search/results/ike%20music" class="btn btn-outline-success btn-round btn-lg"><i class="nc-icon nc-headphones"></i></a>
+									<button type="button" class="btn btn-outline-success btn-round btn-lg" data-toggle="modal" data-target="#myModal">
+									    <i class="nc-icon nc-headphones"></i>
+									</button>
+                  <!-- <a href="https://open.spotify.com/search/results/ike%20music" class="btn btn-outline-success btn-round btn-lg"><i class="nc-icon nc-headphones"></i></a> -->
                 </li>
             </ul>
         </div>
@@ -60,92 +65,135 @@
 
 <!-- page wrapper -->
 <div class="wrapper">
+	<div class="main">
 
-  <!-- landing page/main page/header -->
-  <div id="home" class="page-header section-dark" style="background-image: url('src/img/northern-lights.jpg')">
-      <div class="filter"></div>
+	  <!-- landing page/main page/header -->
+		<div class="">
+		  <div id="home" class="page-header section-dark" style="background-image: url('src/img/northern-lights.jpg')">
+		      <div class="filter"></div>
 
-    <div id="container" class="content-center">
-      <div id="floatingBox" class="container">
-        <div class="title-brand">
-          <h1 class="presentation-title">Viking</h1>
+		    <div id="container" class="content-center">
+		      <div id="floatingBox" class="container">
+		        <div class="title-brand">
+		          <h1 class="presentation-title">Viking</h1>
 
-          <div class="fog-low">
-            <img src="src/img/fog-low.png" alt="">
-          </div>
-          <div class="fog-low right">
-            <img src="src/img/fog-low.png" alt="">
-          </div>
+		          <div class="fog-low">
+		            <img src="src/img/fog-low.png" alt="">
+		          </div>
+		          <div class="fog-low right">
+		            <img src="src/img/fog-low.png" alt="">
+		          </div>
 
-        </div>
+		        </div>
 
-        <h2 class="presentation-subtitle text-center">
+		        <h2 class="presentation-subtitle text-center">
 
-				<!-- Begin countdown -->
-				<div class="container">
-			    <div>
-			      <div class="timer">
-			        <div id="daysTicker" class="countdown"></div>
-			        <div class="counter-text">DAYS</div>
-			      </div>
-			      <div class="timer">
-			        <div id="hoursTicker" class="countdown"></div>
-			        <div class="counter-text">HOURS</div>
-			      </div>
-			      <div class="timer">
-			        <div id="minsTicker" class="countdown"></div>
-			        <div class="counter-text">MINS</div>
-			      </div>
-			      <div class="timer">
-			        <div id="secsTicker" class="countdown"></div>
-			        <div class="counter-text">SECS</div>
-			      </div>
-			    </div>
-			  </div>
+						<!-- Begin countdown -->
+						<div class="container">
+					    <div>
+					      <div class="timer">
+					        <div id="daysTicker" class="countdown"></div>
+					        <div class="counter-text">DAYS</div>
+					      </div>
+					      <div class="timer">
+					        <div id="hoursTicker" class="countdown"></div>
+					        <div class="counter-text">HOURS</div>
+					      </div>
+					      <div class="timer">
+					        <div id="minsTicker" class="countdown"></div>
+					        <div class="counter-text">MINS</div>
+					      </div>
+					      <div class="timer">
+					        <div id="secsTicker" class="countdown"></div>
+					        <div class="counter-text">SECS</div>
+					      </div>
+					    </div>
+					  </div>
 
-				<!-- end countdown -->
-				</h2>
+						<!-- end countdown -->
+						</h2>
 
-      </div>
-    </div>
+		      </div>
+		    </div>
 
-		<!-- background moving clouds effect -->
-    <div class="moving-clouds" style="background-image: url('src/img/clouds.png'); "></div>
+				<!-- background moving clouds effect -->
+		    <div class="moving-clouds" style="background-image: url('src/img/clouds.png'); "></div>
 
-		<!-- bottom of landing page media links -->
-		<!-- <h6 class="category category-absolute"> partners of
-      <a href="https://www.commandcookie.com" target="_blank">
-        <img src="src/img/raven-logo.png" class="creative-logo">
-      </a>
-    </h6> -->
-			<h6 class="category category-absolute">
-				<div class="d-flex flex-row justify-content-center">
-					<div class="p-3 ">
-						<a rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com" target="_blank">
-								<i class="fa fa-facebook-square"></i>
-						</a>
-					</div>
-					<div class="p-3">
-						<a rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com" target="_blank">
-								<i class="fa fa-instagram"></i>
-						</a>
-					</div>
-					<div class="p-3">
-						<a rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://www.twitter.com" target="_blank">
-								<i class="fa fa-twitter"></i>
-						</a>
-					</div>
-				</div>
-			</h6>
-
-
-
-  </div>
+				<!-- bottom of landing page media links -->
+				<!-- <h6 class="category category-absolute"> partners of
+		      <a href="https://www.commandcookie.com" target="_blank">
+		        <img src="src/img/raven-logo.png" class="creative-logo">
+		      </a>
+		    </h6> -->
+					<h6 class="category category-absolute">
+						<div class="d-flex flex-row justify-content-center">
+							<div class="p-3 ">
+								<a rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com" target="_blank">
+										<i class="fa fa-facebook-square"></i>
+								</a>
+							</div>
+							<div class="p-3">
+								<a rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com" target="_blank">
+										<i class="fa fa-instagram"></i>
+								</a>
+							</div>
+							<div class="p-3">
+								<a rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://www.twitter.com" target="_blank">
+										<i class="fa fa-twitter"></i>
+								</a>
+							</div>
+						</div>
+					</h6>
+		  </div>
+		</div>
   <!-- end of landing page section -->
 
-  <!-- more content can go here -->
 
-</div>
+
+  <!-- more content can go here -->
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	    <div class="modal-dialog" role="document">
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                <h5 class="modal-title text-center" id="exampleModalLabel">Choose Your Platform</h5>
+									<!-- window close x -->
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	                    <span aria-hidden="true">&times;</span>
+	                </button>
+	            </div>
+							<!-- main body put links here -->
+	            <div class="modal-body">
+								<div class="col-xl-1">
+									<!-- spotify -->
+									<div class="music-selector-modal p-2">
+										<a href="https://open.spotify.com/album/63qjEeiwWpm10UoCAFR7wP?si=eLJuFUTcTx67r3Ska_VfNg" class="music-select btn btn-outline-success btn-round btn-lg"><i class="fa fa-spotify" aria-hidden="true"></i>Spotify</a>
+									</div>
+									<!-- apple -->
+									<div class="music-selector-modal p-2">
+										<a href="https://itunes.apple.com/us/artist/ike-music/1210905799" class="music-select btn btn-outline-primary btn-round btn-lg"><i class="fa fa-apple" aria-hidden="true"></i>Apple Music</a>
+									</div>
+									<!-- soundcloud -->
+									<div class="music-selector-modal p-2">
+										<a href="https://soundcloud.com/ike_music-1" class="music-select btn btn-outline-danger btn-round btn-lg"><i class="fa fa-soundcloud" aria-hidden="true"></i> Soundcloud</a>
+									</div>
+									<!-- google -->
+									<div class="music-selector-modal p-2">
+										<a href="https://play.google.com/store/music/album/IKE_Music_Here_s_to_New_Beginnings?id=Bwlggb5yzdnl2ekk6pjtgi2osqu&hl=en" class="music-select btn btn-outline-warning btn-round btn-lg"><i class="fa fa-google" aria-hidden="true"></i>Google Play</a>
+									</div>
+								</div>
+	            </div>
+	            <div class="modal-footer">
+	                <div class="center">
+	                    <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">Close</button>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+ </div> <!-- main div end -->
+</div> <!-- wrapper div end -->
 <!-- end page wrapper -->
 <!-- *********************************************************************** -->
 
@@ -165,7 +213,7 @@
           <div class="row">
               <div class="credits ml-auto">
                   <span class="copyright">
-                      © <script>document.write(new Date().getFullYear())</script>, Ike Media <i class="fa fa-check"></i>
+                      © <script>document.write(new Date().getFullYear())</script>, IKE Media <i class="fa fa-check"></i>
                   </span>
               </div>
           </div>
