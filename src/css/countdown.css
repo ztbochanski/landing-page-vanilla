@@ -1,0 +1,67 @@
+/* body {
+  background:url(https://4.bp.blogspot.com/_AQ0vcRxFu0A/S9shDGGyMTI/AAAAAAAAAYk/kn3WTkY2LoQ/s1600/IMG_0714.JPG);
+  background-size:cover;
+  background-position:center center;
+  background-attachment:fixed;
+}
+*/
+
+/* .countdown-wrapper {
+  position: relative;
+  height: 400px;
+} */
+
+/* #countdown, #countdown-text {
+    width: 800px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+/* .countdown {
+  font-weight: 900;
+  font-size: 140px;
+  color: black;
+  opacity: .7;
+  letter-spacing: -4px;
+} */
+
+/* .counter-text {
+  font-weight: 900;
+  font-size: 40px;
+  color: #56a0d3;
+  opacity: .8;
+  text-align: center;
+} */
+
+
+.timer {
+  display: inline-block;
+  margin: 10px;
+}
+
+#container {
+  perspective: 30px;
+}
+
+#inner {
+  transition: transform 0.3s;
+  -webkit-transition: transform 0.3s;
+  /* box-shadow: 4px 4px 50px gray; */
+}
+
+/*============================================================
+ * EXTRAS
+ *============================================================*/
+
+#floatingBox{
+    transition: transform 0.6s;
+  -webkit-transition: transform 0.6s;
+  /* border: solid grey 5px; */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  /* box-shadow: 5px 5px 70px gray; */
+}
