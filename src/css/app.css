@@ -1,9 +1,11 @@
-@media (min-width: 1200px)
-.col-xl-1 {
-    -ms-flex: 0 0 8.333333%;
-    flex: 0 0 8.333333%;
-    max-width: 100%;
+@media (min-width: 1200px) {
+	.col-xl-1 {
+	    -ms-flex: 0 0 8.333333%;
+	    flex: 0 0 8.333333%;
+	    max-width: 100%;
+	}
 }
+	
 .music-selector-modal {
   width: 100%;
   align-items: center;
