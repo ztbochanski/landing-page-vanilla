@@ -1,3 +1,48 @@
+/* Chrome, Safari and Opera syntax */
+/* #fs-toggle:-webkit-full-screen, {
+  display: none;
+} */
+
+/* Firefox syntax */
+/* #fs-toggle:-moz-full-screen {
+  display: none;
+} */
+
+/* IE/Edge syntax */
+/* #fs-toggle:-ms-fullscreen {
+  display: none;
+} */
+
+/* Standard syntax */
+/* #fs-toggle:fullscreen {
+  display: none;
+}
+
+#fs-toggle:not(:fullscreen) {
+  display: contents;
+} */
+
+/* .hide-button {
+  display: none;
+} */
+
+
+.closeScreen {
+  border: none;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.row {
+  width: 100%;
+}
+
+.flex-row {
+  width: 100%;
+}
+
 @media (min-width: 1200px) {
 	.col-xl-1 {
 	    -ms-flex: 0 0 8.333333%;
@@ -5,7 +50,7 @@
 	    max-width: 100%;
 	}
 }
-	
+
 .music-selector-modal {
   width: 100%;
   align-items: center;

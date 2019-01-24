@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang="en">
+<!doctype html >
+<html lang="en" onclick="openFullscreen();">
 <head>
 	<meta charset="utf-8" />
 	<link rel="icon" type="image/png" href="src/img/raven-logo.png">
@@ -15,6 +15,7 @@
 	<link href="src/css/paper-kit.css?v=2.1.0" rel="stylesheet"/>
 	<link href="src/css/app.css" rel="stylesheet" />
 	<link href="src/css/countdown.css" rel="stylesheet" />
+	<link href="src/css/parallax.css" rel="stylesheet" />
 
 	<!-- Fonts and icons -->
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
@@ -26,38 +27,27 @@
 <!-- *********************************************************************** -->
 <!-- *********************************************************************** -->
 
-<body>
-
 <!-- navbar here -->
 <nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="500">
-    <div class="container">
-
-        <!-- small screen hamburger -->
-        <!-- <div class="navbar-translate">
-            <button class="navbar-toggler navbar-toggler-right navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-bar"></span>
-                <span class="navbar-toggler-bar"></span>
-                <span class="navbar-toggler-bar"></span>
-            </button>
-        </div> -->
+		<div class="d-flex flex-row justify-content-center">
 
         <!-- nav list items -->
-        <div class="ml-auto" id="">
-						<ul class="navbar-nav ml-auto pr-2">
+				<!-- green button -->
+				<div class="row justify-content-around">
+			    <div id="fs-toggle" class="col-4">
+						<button onclick="closeFullscreen();" type="button" class="closeScreen m-3 btn btn-outline-success">
+								<i class="nc-icon nc-minimal-down"></i>
+						</button>
+			    </div>
+			    <div class="col-auto ml-auto">
+						<button type="button" class="m-3 btn btn-outline-success btn-round btn-lg" data-toggle="modal" data-target="#myModal">
+						    <i class="nc-icon nc-headphones"></i>
+						</button>
+			    </div>
+			  </div>
 
-								<!-- pages/list items -->
-								<!-- Button trigger modal -->
 
 
-								<!-- green button -->
-                <li class="nav-item mr-2 pr-2">
-									<button type="button" class="btn btn-outline-success btn-round btn-lg" data-toggle="modal" data-target="#myModal">
-									    <i class="nc-icon nc-headphones"></i>
-									</button>
-                  <!-- <a href="https://open.spotify.com/search/results/ike%20music" class="btn btn-outline-success btn-round btn-lg"><i class="nc-icon nc-headphones"></i></a> -->
-                </li>
-            </ul>
-        </div>
     </div>
 </nav>
 <!-- end navbar  -->
@@ -68,9 +58,9 @@
 	<div class="main">
 
 	  <!-- landing page/main page/header -->
-		<div class="">
-		  <div id="home" class="page-header section-dark" style="background-image: url('src/img/northern-lights.jpg')">
-		      <div class="filter"></div>
+	  <div id="home" class="page-header section-dark" style="background-image: url('src/img/northern-lights.jpg')">
+	      <div class="filter"></div>
+
 
 		    <div id="container" class="content-center">
 		      <div id="floatingBox" class="container">
@@ -115,9 +105,11 @@
 
 		      </div>
 		    </div>
+			</div>
 
 				<!-- background moving clouds effect -->
-		    <div class="moving-clouds" style="background-image: url('src/img/clouds.png'); "></div>
+				<div class="moving-clouds" style="background-image: url('src/img/clouds.png');"></div>
+
 
 				<!-- bottom of landing page media links -->
 				<!-- <h6 class="category category-absolute"> partners of
@@ -144,8 +136,6 @@
 							</div>
 						</div>
 					</h6>
-		  </div>
-		</div>
   <!-- end of landing page section -->
 
 
@@ -221,7 +211,36 @@
   </footer>
   <!-- end footer section -->
 <!-- *********************************************************************** -->
+<script>
+/* Get the documentElement (<html>) to display the page in fullscreen */
+var elem = document.documentElement;
 
+/* View in fullscreen */
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    elem.msRequestFullscreen();
+  }
+}
+
+/* Close fullscreen */
+function closeFullscreen() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.mozCancelFullScreen) { /* Firefox */
+    document.mozCancelFullScreen();
+  } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) { /* IE/Edge */
+    document.msExitFullscreen();
+  }
+}
+</script>
 </body>
 <!-- end body -->
 <!-- *********************************************************************** -->
@@ -254,6 +273,9 @@
 
 	<!-- mouse over script -->
 	<script src="src/js/mouse-movement.js"></script>
+
+	<!-- fullscreen -->
+	<!-- <script src="src/js/index.js"></script> -->
 
 <!-- *********************************************************************** -->
 </html>
