@@ -1,7 +1,7 @@
 # landing-page-viking
 responsive launch page using bootstrap 4 and other packages
 
-[demo](https://ztbochanski.github.io/landing-page-viking/)
+[demo](https://ztbochanski.github.io/landing-page-vanilla/)
 
 ********************************************************************************
 ## ADJUST COUNTDOWN TIMER
